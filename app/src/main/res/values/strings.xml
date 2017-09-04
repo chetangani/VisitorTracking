@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Visitor Tracking</string>
+
+    <string name="visitorname">Visitor Name</string>
+    <string name="visitormblnumber">Visitor Mobile Number</string>
+    <string name="visitoremail">Visitor Email</string>
+    <string name="visitortomeet">Visitor To Meet</string>
+    <string name="visitorfrom">Visitor From</string>
+    <string name="visitor">Visitor Details</string>
+    <string name="submit_btn">SUBMIT</string>
+    <string name="login_txt">LOGIN</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="login_id">Login ID</string>
+    <string name="login_password">Password</string>
+
+    <string name="visitordetails">Visitor Details</string>
+    <string name="visitors">Visitors</string>
+    <string name="checkout_visitors">Checkout Visitors</string>
+
+    <string name="printsuccess">Print Success</string>
+    <string name="printfailed">Print Failed</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

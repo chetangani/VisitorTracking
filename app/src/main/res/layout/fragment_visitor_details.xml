@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/visitor_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/visitor"
+                android:textSize="@dimen/text21"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp16"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_visitor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4">
+
+                    <EditText
+                        android:id="@+id/et_visitor_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/visitorname"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_visitor_mbl_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4">
+
+                    <EditText
+                        android:id="@+id/et_visitor_mbl_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/visitormblnumber"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_visitor_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4">
+
+                    <EditText
+                        android:id="@+id/et_visitor_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/visitoremail"
+                        android:inputType="textEmailAddress"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_visitor_to_meet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4">
+
+                    <EditText
+                        android:id="@+id/et_visitor_to_meet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/visitortomeet"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_visitor_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4">
+
+                    <EditText
+                        android:id="@+id/et_visitor_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/visitorfrom"
+                        android:inputType="textCapWords"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/visitor_image"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp16"
+                app:srcCompat="@mipmap/ic_camera"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bgk"
+        android:text="@string/submit_btn"/>
+</RelativeLayout>
