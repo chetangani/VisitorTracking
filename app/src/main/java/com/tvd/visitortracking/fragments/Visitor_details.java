@@ -348,7 +348,7 @@ public class Visitor_details extends Fragment implements View.OnClickListener {
         et_visitor_email.setText("");
         et_visitor_tomeet.setText("");
         et_visitor_from.setText("");
-        preview_image.setImageBitmap(null);
+        preview_image.setImageResource(R.mipmap.ic_camera);
     }
 
     @Override
